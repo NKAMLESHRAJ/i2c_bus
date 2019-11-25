@@ -14,7 +14,7 @@ module i2c_controller_tb;
 	wire i2c_sda;
 	wire i2c_scl;
 	// Instantiate the Unit Under Test (UUT)
-i2c_controller master (
+i2cmaster master (
 		.clk(clk), 
 		.rst(rst), 
 		.addr(addr), 
@@ -28,7 +28,7 @@ i2c_controller master (
 		);
 	
 		
-i2c_slave_controller slave (
+i2cslave slave (
     		.sda(i2c_sda), 
     		.scl(i2c_scl)
    		 );
