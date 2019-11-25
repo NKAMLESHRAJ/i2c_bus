@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module i2c_slave_controller(
+module i2cslave(
 	inout sda,
 	inout scl
 	);
