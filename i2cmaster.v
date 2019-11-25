@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module i2c_controller(
+module i2cmaster(
 	input wire clk,rst,[6:0] addr,[7:0] data_in,enable,rw, //input
 	output reg [7:0] data_out,                             //output
 	output wire ready,
